@@ -5,12 +5,12 @@ A repository storing my codepens from [codepen.io](https://codepen.io).
 ## Codepens
 
 
-- [Bouncing Balls](kajchang.github.io/CodePen-Portfolio/Bouncing Balls)
+- [Bouncing Balls](Bouncing Balls)
 
-- [Turtle](kajchang.github.io/CodePen-Portfolio/Turtle)
+- [Turtle](Turtle)
 
-- [Jelly](kajchang.github.io/CodePen-Portfolio/Jelly)
+- [Jelly](Jelly)
 
-- [Paddle](kajchang.github.io/CodePen-Portfolio/Paddle)
+- [Paddle](Paddle)
 
-- [Olympic Rings](kajchang.github.io/CodePen-Portfolio/Olympic Rings)
+- [Olympic Rings](Olympic Rings)
