@@ -1,5 +1,4 @@
-
-              var ballx, bally, paddlex, paddley, ballspeedy, ballspeedx, lost, points, paddledirection;
+var ballx, bally, paddlex, paddley, ballspeedy, ballspeedx, lost, points, paddledirection;
 
 function setup() {
   createCanvas(1000, 600);
@@ -103,5 +102,3 @@ function keyReleased() {
   
   return false;
 }
-
-            

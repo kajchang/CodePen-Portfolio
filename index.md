@@ -5,12 +5,12 @@ A repository storing my codepens from [codepen.io](https://codepen.io) made duri
 ## Codepens
 
 
-- [Bouncing Balls](Bouncing Balls)
-
 - [Turtle](Turtle)
 
-- [Jelly](Jelly)
-
 - [Paddle](Paddle)
+
+- [Bouncing Balls](Bouncing Balls)
+
+- [Jelly](Jelly)
 
 - [Olympic Rings](Olympic Rings)

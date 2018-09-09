@@ -1,5 +1,4 @@
-
-              var x, y, xvelocity, yvelocity;
+var x, y, xvelocity, yvelocity;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -31,4 +30,3 @@ function keyPressed () {
     background(255);
   }
 }
-            

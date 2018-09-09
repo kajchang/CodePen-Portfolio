@@ -1,5 +1,4 @@
-
-              function setup() {
+function setup() {
   createCanvas(600, 600);
   noStroke();
   
@@ -27,5 +26,3 @@ function draw() {
   ellipse(200, 90, 20, 20);
   ellipse(300, 90, 20, 20);
 }
-
-            

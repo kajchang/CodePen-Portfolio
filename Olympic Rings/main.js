@@ -1,5 +1,4 @@
-
-              function setup() {
+function setup() {
   createCanvas(400, 400);
   background(255);
   strokeWeight(10);
@@ -28,5 +27,3 @@ function draw() {
   stroke(255, 0, 0);
   ellipse(295, 75, 100, 100);
 }
-
-            
