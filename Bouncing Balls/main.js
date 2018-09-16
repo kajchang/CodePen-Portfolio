@@ -10,7 +10,7 @@ function setup() {
 }
 
 function draw() {
-  fill(random(123456789), random(1234567890), random(1234567890));
+  fill(random(255), random(255), random(255));
   ellipse (x, y, 100, 100); 
  	
   x += xvelocity;
