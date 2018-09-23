@@ -1,0 +1,15 @@
+
+              body {
+  background-color: black;
+}
+
+input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  padding-left: 10px;
+  width: 75px;
+}
+
+            

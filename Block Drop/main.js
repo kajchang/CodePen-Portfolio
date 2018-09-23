@@ -1,4 +1,5 @@
-var rects;
+
+              var rects;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -43,3 +44,5 @@ function drawRectangle(rect_) {
    }
    
 }
+
+            

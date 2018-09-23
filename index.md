@@ -5,14 +5,14 @@ A repository storing my codepens from [codepen.io](https://codepen.io) made duri
 ## Codepens
 
 
+- [Network](Network)
+
+- [Life](Life)
+
+- [Recursive Squares](Recursive Squares)
+
+- [Smiley Faces](Smiley Faces)
+
 - [Bubbles](Bubbles)
 
 - [Block Drop](Block Drop)
-
-- [Bouncing Balls](Bouncing Balls)
-
-- [Turtle](Turtle)
-
-- [Paddle](Paddle)
-
-- [Jelly](Jelly)
