@@ -1,5 +1,4 @@
-
-              function setup() {
+function setup() {
   createCanvas(windowWidth, windowHeight);
   background("purple");
 }
@@ -16,5 +15,3 @@ function face(x, y, facecolor, eyecolor, size) {
   ellipse(x + 10, y - 10, 10, 15);
   ellipse(x - 10, y - 10, 10, 15);
 }
-
-            

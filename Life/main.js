@@ -1,5 +1,4 @@
-
-              var butterflies;
+var butterflies;
 
 // handlers called by the butterfly but access global variables
 
@@ -112,5 +111,3 @@ function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
   setup();
 }
-
-            

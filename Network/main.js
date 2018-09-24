@@ -1,5 +1,4 @@
-
-              var sky;
+var sky;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -73,5 +72,3 @@ function windowResized() {
 function updateSky() {
   sky = new Sky(document.getElementById("stars").value);
 }
-
-            

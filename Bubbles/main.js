@@ -1,5 +1,4 @@
-
-              var bubbles, mouseBubble;
+var bubbles, mouseBubble;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -89,5 +88,3 @@ function mouseReleased() {
   mouseBubble.speed = random(1, 3);
   bubbles.push(mouseBubble);
 }
-
-            

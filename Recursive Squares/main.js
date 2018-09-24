@@ -1,5 +1,4 @@
-
-              /* 
+/* 
 Draws squares using a recursive function that moves the square to the right or down a row depending on the previous position of the square and changes to color by a random value based on the previous color.
 */
 
@@ -32,5 +31,3 @@ function windowResized() {
 function keyPressed() {
   loop(); 
 }
-
-            
