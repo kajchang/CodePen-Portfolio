@@ -7,9 +7,9 @@ A repository storing my codepens from [codepen.io](https://codepen.io) made duri
 
 - [Paddle](Paddle)
 
-- [Bouncing Balls](Bouncing Balls)
-
 - [Turtle](Turtle)
+
+- [Bouncing Balls](Bouncing Balls)
 
 - [Olympic Rings](Olympic Rings)
 
@@ -19,10 +19,14 @@ A repository storing my codepens from [codepen.io](https://codepen.io) made duri
 
 - [Network](Network)
 
-- [Block Drop](Block Drop)
-
 - [Life](Life)
 
 - [Recursive Squares](Recursive Squares)
 
 - [Smiley Faces](Smiley Faces)
+
+- [Block Drop](Block Drop)
+
+- [pew pew](pew pew)
+
+- [osu!](osu!)
