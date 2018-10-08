@@ -29,4 +29,6 @@ A repository storing my codepens from [codepen.io](https://codepen.io) made duri
 
 - [pew pew](pew pew)
 
+- [dice](dice)
+
 - [osu!](osu!)
