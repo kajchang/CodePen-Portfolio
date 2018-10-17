@@ -1,16 +1,27 @@
-var dice = [];
-var numberOfDice = 5;
-var money = 100;
-var bet = 5;
-var betOn;
+var dice, numberOfDice, money, bet, betOn, odd_button, even_button;
 
 function setup() {
+  bet = 5;
+  money = 100;
+  numberOfDice = 5;
+  dice = [];
+
   canvas = createCanvas(windowWidth, windowHeight);
   
   canvas.position(0, 0);
   for (x = 0; x < numberOfDice; x++) {
     dice.push(new Dice(randomDiePosition(), 0));
   }
+  
+  odd_button = createButton("Bet Odd");
+  odd_button.position(width / 4 - 100, height / 1.15);
+  odd_button.mousePressed(betOdd);
+  
+  even_button = createButton("Bet Even");
+  even_button.position(width * 3 / 4 - 100, height / 1.15);
+  even_button.mousePressed(betEven);
+  
+  noStroke();
 }
 
 function draw() {
@@ -27,38 +38,46 @@ function draw() {
   fill(255);
   textSize(width / 25);
   text("Total: " + dice.reduce((acc, cur) => acc + cur.value, 0), width / 16, width / 16);
-  text("Money: " + money, width / 16, width / 8);
+  text("Money: " + money + "$", width / 16, width / 8);
   
   textSize(width / 33);
   fill(0);
-  text("Press O to Bid on Odd", width / 16, height * 15 / 16);
-  text("Press E to Bid on Even", width * 5 / 8, height * 15 / 16);
-
   if (bet > 0) {
-    text("Bet: " + bet, width / 2.25, height * 15 / 16);   
+    text("Bet: " + bet, width / 2 - 100, height * 15 / 16);   
   } else {
     textSize(width / 10);
     fill(255);
     text("You Lose!", width * 5 / 16, height / 2);
+    even_button.remove();
+    odd_button.remove();
+    
     noLoop();
   }
   
   if (dice[0].y >= height - dice[0].size - height / 5) {
-    if (betOn === "odds") {
-      if (dice.reduce((acc, cur) => acc + cur.value, 0) % 2 === 1) {
-        money += bet * 2;
-        betOn = undefined;
-      }
-    } else if (betOn === "evens") {
-      if (dice.reduce((acc, cur) => acc + cur.value, 0) % 2 === 0) {
-        money += bet * 2;
-        betOn = undefined;
-      }
+    if (betOn !== undefined) {
+      if (betOn.test(dice.reduce((acc, cur) => acc + cur.value, 0))) {
+      money += bet * betOn.value;
+    }
+    
+    betOn = undefined; 
     }
     
     if (money < bet) {
       bet = money;
     }
+  }
+}
+
+class Bet {
+  constructor(name, test_func, value) {
+    this.name = name;
+    this.test_func = test_func;
+    this.value = value;
+  }
+  
+  test(sum) {
+    return this.test_func(sum);
   }
 }
 
@@ -130,33 +149,42 @@ class Dice {
 }
 
 function keyPressed() {
-  if (key === "e" && money >= bet && dice[0].y >= height - die.size - height / 5) {
-    for (let die of dice) {
-      die.reset(); 
-    }
-    money -= bet;
-    betOn = "evens";
-  } else if (key === "o" && money >= bet && dice[0].y >= height - die.size - height / 5) {
-    for (let die of dice) {
-      die.reset(); 
-    }
-    money -= bet;
-    betOn = "odds";
-  } else if (keyCode === UP_ARROW && money > bet && dice[0].y >= height - die.size - height / 5) {
+  if (keyCode === UP_ARROW && money > bet && dice[0].y >= height - die.size - height / 5) {
     bet++;
   } else if (keyCode === DOWN_ARROW && bet > 1 && dice[0].y >= height - die.size - height / 5) {
     bet--;
   }
 }
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
+function betOdd() {
+  if (money >= bet && dice[0].y >= height - die.size - height / 5) {
+    for (let die of dice) {
+      die.reset(); 
+    }
+    money -= bet;
+    betOn = new Bet("odds", sum => sum % 2 == 1, 2);
+  }
+}
+
+function betEven() {
+  if (money >= bet && dice[0].y >= height - die.size - height / 5) {
+    for (let die of dice) {
+      die.reset(); 
+    }
+    money -= bet;
+    betOn = new Bet("evens", sum => sum % 2 == 0, 2);
+  }
+}
+
 function randomDiePosition() {
   // prevents die overlapping
-  // breaks if no space is found
-
   var pos = random(width - 50);
   
   for (die of dice) {
-    // geometric meaning of absolute value is distance on the number line, thanks Mr. Tran
     if (abs(die.x - pos) <= 50) {
       return randomDiePosition();
     }

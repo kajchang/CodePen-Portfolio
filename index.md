@@ -25,10 +25,12 @@ A repository storing my codepens from [codepen.io](https://codepen.io) made duri
 
 - [Smiley Faces](Smiley Faces)
 
-- [Block Drop](Block Drop)
+- [dice](dice)
 
 - [pew pew](pew pew)
 
-- [dice](dice)
+- [Block Drop](Block Drop)
 
-- [osu!](osu!)
+- [loops](loops)
+
+- [shapes](shapes)
