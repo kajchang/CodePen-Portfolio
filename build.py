@@ -10,7 +10,7 @@ codepens = []
 user = 'kaijchang'
 page = 2
 
-driver = webdriver.PhantomJS()
+driver = webdriver.PhantomJS('/usr/local/bin/phantomjs')
 
 driver.get('https://codepen.io/{}/pens/popular/'.format(user))
 
