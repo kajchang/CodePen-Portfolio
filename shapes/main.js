@@ -20,7 +20,7 @@ function my_draw() {
   background(0);
   for (let i = 0; i < 255; i++)  {
     push();
-    fill(255 - cos(i) * 255, 255 - tan(i) * 255, 255 - tan(i) * 255);
+    fill(255 - cos(i) * 255, 255 - tan(i) * 255, 255 - cos(i) * 255);
     translate(random(-i, i), random(-i, i), random(-i, i));
     sphere((255 - i) / 10);
     pop();
@@ -37,10 +37,4 @@ function my_draw() {
     }
     pop();
   }*/
-}
-
-function keyPressed() {
-  if (key === ' ') {
-    my_draw();      
-  }
 }

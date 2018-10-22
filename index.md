@@ -19,18 +19,20 @@ A repository storing my codepens from [codepen.io](https://codepen.io) made duri
 
 - [Network](Network)
 
-- [Life](Life)
-
 - [Recursive Squares](Recursive Squares)
 
-- [Smiley Faces](Smiley Faces)
+- [Life](Life)
 
 - [dice](dice)
 
 - [pew pew](pew pew)
 
+- [Smiley Faces](Smiley Faces)
+
 - [Block Drop](Block Drop)
 
-- [loops](loops)
+- [radiate](radiate)
 
 - [shapes](shapes)
+
+- [loops](loops)
