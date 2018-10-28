@@ -19,9 +19,9 @@ A repository storing my codepens from [codepen.io](https://codepen.io) made duri
 
 - [Network](Network)
 
-- [Recursive Squares](Recursive Squares)
-
 - [Life](Life)
+
+- [Recursive Squares](Recursive Squares)
 
 - [dice](dice)
 
@@ -36,3 +36,9 @@ A repository storing my codepens from [codepen.io](https://codepen.io) made duri
 - [shapes](shapes)
 
 - [loops](loops)
+
+- [Array Challenges](Array Challenges)
+
+- [8ball](8ball)
+
+- [Light](Light)
