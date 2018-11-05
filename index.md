@@ -19,13 +19,13 @@ A repository storing my codepens from [codepen.io](https://codepen.io) made duri
 
 - [Network](Network)
 
+- [pew pew](pew pew)
+
 - [Life](Life)
 
 - [Recursive Squares](Recursive Squares)
 
 - [dice](dice)
-
-- [pew pew](pew pew)
 
 - [Smiley Faces](Smiley Faces)
 
@@ -35,10 +35,12 @@ A repository storing my codepens from [codepen.io](https://codepen.io) made duri
 
 - [shapes](shapes)
 
+- [8ball](8ball)
+
 - [loops](loops)
+
+- [Etch a Sketch](Etch a Sketch)
 
 - [Array Challenges](Array Challenges)
 
-- [8ball](8ball)
-
-- [Light](Light)
+- [Fahrenheit to Celsius](Fahrenheit to Celsius)
