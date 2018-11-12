@@ -7,6 +7,8 @@ A repository storing my codepens from [codepen.io](https://codepen.io) made duri
 
 - [Paddle](Paddle)
 
+- [Tron](Tron)
+
 - [Turtle](Turtle)
 
 - [Bouncing Balls](Bouncing Balls)
@@ -19,13 +21,13 @@ A repository storing my codepens from [codepen.io](https://codepen.io) made duri
 
 - [Network](Network)
 
+- [dice](dice)
+
 - [pew pew](pew pew)
 
 - [Life](Life)
 
 - [Recursive Squares](Recursive Squares)
-
-- [dice](dice)
 
 - [Smiley Faces](Smiley Faces)
 
@@ -39,8 +41,6 @@ A repository storing my codepens from [codepen.io](https://codepen.io) made duri
 
 - [loops](loops)
 
-- [Etch a Sketch](Etch a Sketch)
+- [Fahrenheit to Celsius](Fahrenheit to Celsius)
 
 - [Array Challenges](Array Challenges)
-
-- [Fahrenheit to Celsius](Fahrenheit to Celsius)
