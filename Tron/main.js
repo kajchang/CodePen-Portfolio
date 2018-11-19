@@ -1,14 +1,14 @@
 var cursor, robot, map;
 
 function setup() {
-  canvas = createCanvas(windowWidth, windowHeight);
+  canvas = createCanvas(2 * round(windowWidth / 2), 2 * round(windowHeight / 2));
 
   canvas.position(0, 0);
 
   background(0);
   
-  cursor = new LightCycle([0, 255, 255], 5, round(height / 2), "right");
-  robot = new RobotCycle([255, 255, 0], width - 5, round(height / 2), "left");
+  cursor = new LightCycle([0, 0, 255], 5, height / 2, "right");
+  robot = new RobotCycle([255, 0, 0], width - 5, height / 2, "left");
   
   stroke(255);
 
@@ -30,13 +30,21 @@ function draw() {
   
   if (keyIsPressed) {
     if (keyCode == RIGHT_ARROW) {
-      cursor.direction = "right";
+      if (cursor.direction !== "left") {
+        cursor.direction = "right"; 
+      }
     } else if (keyCode == LEFT_ARROW) {
-      cursor.direction = "left";
+      if (cursor.direction !== "right") {
+        cursor.direction = "left"; 
+      }
     } else if (keyCode == DOWN_ARROW) {
-      cursor.direction = "down";
+      if (cursor.direction !== "up") {
+        cursor.direction = "down"; 
+      }
     } else if (keyCode == UP_ARROW) {
-      cursor.direction = "up";
+      if (cursor.direction !== "down") {
+        cursor.direction = "up";
+      }
     }
   }
 
@@ -50,19 +58,19 @@ class LightCycle {
     this.prevY = y;
     this.x = this.prevX;
     this.y = this.prevY;
-    this.speed = 5;
+    this.speed = 4;
     this.color = color;
     this.direction = starting_direction;
   }
   
   move(direction) {
-    if (direction == "down") {
+    if (direction === "down") {
       this.y += this.speed;
-    } else if (direction == "up") {
+    } else if (direction === "up") {
       this.y -= this.speed;
-    } else if (direction == "right") {
+    } else if (direction === "right") {
       this.x += this.speed;
-    } else if (direction == "left") {
+    } else if (direction === "left") {
       this.x -= this.speed;
     }
   }
@@ -136,9 +144,11 @@ class RobotCycle extends LightCycle {
       possible_directions.splice(possible_directions.indexOf(this.direction), 1);
       for (let direction of possible_directions) {
         this.move(direction);
+
         if (this.isDead(this.x, this.y)) {
-          possible_directions.splice(possible_directions.indexOf(direction), 1);
+ possible_directions.splice(possible_directions.indexOf(direction), 1);
         }
+
         this.x = this.prevX;
         this.y = this.prevY;
       }
