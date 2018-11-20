@@ -5,42 +5,42 @@ A repository storing my codepens from [codepen.io](https://codepen.io) made duri
 ## Codepens
 
 
-- [Paddle](Paddle)
+- [Paddle](pens/Paddle)
 
-- [Tron](Tron)
+- [Tron](pens/Tron)
 
-- [Turtle](Turtle)
+- [Turtle](pens/Turtle)
 
-- [Bouncing Balls](Bouncing Balls)
+- [Bouncing Balls](pens/Bouncing Balls)
 
-- [Olympic Rings](Olympic Rings)
+- [Olympic Rings](pens/Olympic Rings)
 
-- [Jelly](Jelly)
+- [Jelly](pens/Jelly)
 
-- [Bubbles](Bubbles)
+- [Bubbles](pens/Bubbles)
 
-- [Network](Network)
+- [Network](pens/Network)
 
-- [dice](dice)
+- [dice](pens/dice)
 
-- [pew pew](pew pew)
+- [pew pew](pens/pew pew)
 
-- [Life](Life)
+- [Life](pens/Life)
 
-- [Recursive Squares](Recursive Squares)
+- [Recursive Squares](pens/Recursive Squares)
 
-- [Smiley Faces](Smiley Faces)
+- [Smiley Faces](pens/Smiley Faces)
 
-- [Block Drop](Block Drop)
+- [Block Drop](pens/Block Drop)
 
-- [radiate](radiate)
+- [radiate](pens/radiate)
 
-- [shapes](shapes)
+- [shapes](pens/shapes)
 
-- [8ball](8ball)
+- [8ball](pens/8ball)
 
-- [loops](loops)
+- [loops](pens/loops)
 
-- [Fahrenheit to Celsius](Fahrenheit to Celsius)
+- [Fahrenheit to Celsius](pens/Fahrenheit to Celsius)
 
-- [Array Challenges](Array Challenges)
+- [Array Challenges](pens/Array Challenges)

@@ -20,7 +20,8 @@ pens_on_page = driver.find_elements_by_class_name('item-title')
 
 for pen in pens_on_page:
     link = pen.find_element_by_tag_name('a')
-    cpen.download_codepen(link.get_attribute('href'))
+    cpen.download_codepen(link.get_attribute('href'),
+                          'pens/{}'.format(link.text))
     codepens.append(link.text)
 
 while pens_on_page:
@@ -32,7 +33,8 @@ while pens_on_page:
 
     for pen in pens_on_page:
         link = pen.find_element_by_tag_name('a')
-        cpen.download_codepen(link.get_attribute('href'))
+        cpen.download_codepen(link.get_attribute('href'),
+                              'pens/{}'.format(link.text))
         codepens.append(link.text)
 
     page += 1

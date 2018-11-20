@@ -5,5 +5,5 @@ A repository storing my codepens from [codepen.io](https://codepen.io) made duri
 ## Codepens
 
 {% for codepen in codepens %}
-- [{{codepen}}]({{codepen}})
+- [{{codepen}}](pens/{{codepen}})
 {% endfor %}
