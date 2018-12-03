@@ -13,12 +13,12 @@ function draw() {
   
   // draw each bubble
   for (let bubble of bubbles) {
-    drawBubble(bubble);
+    bubble.draw();
   }
   
   if (!mouseIsPressed) {
     // only make bubble half the time
-    if (random(100) >= 50) {
+    if (random(100) >= 25) {
       // generate some random values for the bubble
       var x_position = random(winMouseX - 10, winMouseX + 10);
       var y_position = random(winMouseY - 10, winMouseY + 10);
@@ -26,49 +26,54 @@ function draw() {
       var speed = random(1, 3);
 
       // create the bubble
-      bubbles.push(createBubble(x_position, y_position, size, speed, randomColor()));
+      bubbles.push(new Bubble(x_position, y_position, size, speed, randomColor()));
     }
   } else {
     // remake the bubble, but bigger and at the mouse
-    mouseBubble = createBubble(mouseX, mouseY, ++mouseBubble.size, 0, mouseBubble.color);
+    mouseBubble = new Bubble(mouseX, mouseY, ++mouseBubble.size, 0, mouseBubble.color);
     
     // draw the mouse bubble
-    drawBubble(mouseBubble);
+    mouseBubble.draw();
   }
 }
 
-function drawBubble(bubble) {
-  // spread the color triplet
-  fill(...bubble.color);
-  
-  // draw the bubble
-  ellipse(bubble.x, bubble.y, bubble.size, bubble.size);
-  
-  // move the bubble according to its speed
-  bubble.y -= bubble.speed;
-  
-  // remove the bubble from the list if its bottom is off the top of the screen
-  if (bubble.y + bubble.size < 0) {
-    bubbles.splice(bubbles.indexOf(bubble), 1);
+class Bubble {
+  constructor (x, y, size, speed, color) {
+    this.x = x;
+    this.y = y;
+    this.size = size;
+    this.speed = speed;
+    this.color = color;
   }
-}
-
-function createBubble(x, y, size, speed, color) {
-  return {x: x, y: y, size: size, speed: speed, color: color};
+  
+  draw() {
+    fill(this.color);
+  
+    // draw the bubble
+    ellipse(this.x, this.y, this.size, this.size);
+  
+    // move the bubble according to its speed
+    this.y -= this.speed;
+  
+    // remove the bubble from the list if its bottom is off the top of the screen
+    if (this.y + this.size < 0) {
+      bubbles.splice(bubbles.indexOf(this), 1);
+    }    
+  }
 }
 
 function randomColor() {
   // earthy color scheme
-  var color_triplet = [random(200, 255), random(200, 255), random(255)];
+  // var color_triplet = [random(200, 255), random(200, 255), random(255)];
 
   // aquatic color scheme
-  // var color_triplet = [random(255), random(200, 255), random(200, 255)];
+  var color_triplet = [random(255), random(200, 255), random(200, 255)];
 
   // purpley color scheme
   // var color_triplet = [random(200, 255), random(255), random(200, 255)];
 
   // muted color scheme
-  //var color_triplet = [random(200, 255), random(200, 255), random(200, 255)];
+  // var color_triplet = [random(200, 255), random(200, 255), random(200, 255)];
   
   return color_triplet;
 }
@@ -80,7 +85,7 @@ function windowResized() {
 
 // start the mouseBubble
 function mousePressed() {
-  mouseBubble = createBubble(mouseX, mouseY, 0, 0, randomColor());
+  mouseBubble = new Bubble(mouseX, mouseY, 0, 0, randomColor());
 }
 
 // release the mouseBubble
