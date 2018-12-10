@@ -17,5 +17,5 @@ function fahrenheitToCelsius(fahrenheitTemp) {
 }
 
 function fahrenheitToKelvin(fahrenheitTemp) {
-  return (fahrenheitTemp - 32) * 5 / 9 + 273.15;
+  return fahrenheitToCelsius(fahrenheitTemp) + 273.15;
 }

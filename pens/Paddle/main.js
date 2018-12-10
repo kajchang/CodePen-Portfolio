@@ -49,7 +49,7 @@ class Paddle {
   }
   
   move() {
-    if (this.directio  !== null) {
+    if (this.direction !== null) {
       if (this.direction === "UP") {
         this.y -= 5;
       } else if (this.direction === "DOWN") {
@@ -70,7 +70,7 @@ function setup() {
   createCanvas(800, 400);
 
   ball = new Ball(width - 50, height / 2, 7, 7);
-  paddle = new Paddle(20, height / 2);
+  paddle = new Paddle(20, height / 2 - 75);
   
   // set points
   points = 0;

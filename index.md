@@ -35,12 +35,14 @@ A repository storing my codepens from [codepen.io](https://codepen.io) made duri
 
 - [radiate](pens/radiate)
 
-- [shapes](pens/shapes)
-
 - [Fahrenheit to Celsius](pens/Fahrenheit to Celsius)
+
+- [shapes](pens/shapes)
 
 - [8ball](pens/8ball)
 
 - [loops](pens/loops)
 
 - [Array Challenges](pens/Array Challenges)
+
+- [weird stuff](pens/weird stuff)
