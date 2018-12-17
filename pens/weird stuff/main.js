@@ -17,8 +17,8 @@ function draw() {
 	background(background_color);
 	
 	background_color[0] += r;
-	background_color[1] += b;
-	background_color[2] += g;
+	background_color[1] += g;
+	background_color[2] += b;
 	
 	if (background_color[0] > 255 || background_color[0] < 0) {
 		r = -r;
@@ -36,8 +36,10 @@ function draw() {
 }
 
 function multicolor_text(string) {
-	textSize(width / 4 / string.length);
+	textSize(width / string.length / 3);
 
+	push();
 	fill(random(255), random(255), random(255));
-	text(string, width / 2, height / 5);
+	text(string, width / 2, height / 2);
+	pop();
 }

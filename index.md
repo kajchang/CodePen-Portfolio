@@ -29,20 +29,26 @@ A repository storing my codepens from [codepen.io](https://codepen.io) made duri
 
 - [Recursive Squares](pens/Recursive Squares)
 
+- [radiate](pens/radiate)
+
 - [Smiley Faces](pens/Smiley Faces)
 
 - [Block Drop](pens/Block Drop)
 
-- [radiate](pens/radiate)
-
 - [Fahrenheit to Celsius](pens/Fahrenheit to Celsius)
 
-- [shapes](pens/shapes)
-
 - [8ball](pens/8ball)
+
+- [shapes](pens/shapes)
 
 - [loops](pens/loops)
 
 - [Array Challenges](pens/Array Challenges)
 
+- [weird bounce but ok](pens/weird bounce but ok)
+
 - [weird stuff](pens/weird stuff)
+
+- [keyframe](pens/keyframe)
+
+- [agar.io](pens/agar.io)

@@ -1,0 +1,28 @@
+.thebox {
+	width: 33vh;
+	height: 33vh;
+	position: relative;
+	background: black;
+	animation: around 5s infinite;
+}
+
+@keyframes around {
+	0% {
+		top: 0vh;
+	}
+	25% {
+		top: 60vh;
+		left: 0vw;
+	}
+	50% {
+		top: 60vh;
+		left: 80vw;
+	}
+	75% {
+		top: 0vh;
+		left: 80vw;
+	}
+	100% {
+		left: 0vw;
+	}
+}
