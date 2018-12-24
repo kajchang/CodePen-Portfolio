@@ -45,6 +45,8 @@ A repository storing my codepens from [codepen.io](https://codepen.io) made duri
 
 - [Array Challenges](pens/Array Challenges)
 
+- [oops](pens/oops)
+
 - [weird bounce but ok](pens/weird bounce but ok)
 
 - [weird stuff](pens/weird stuff)
