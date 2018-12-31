@@ -33,9 +33,9 @@ A repository storing my codepens from [codepen.io](https://codepen.io) made duri
 
 - [Smiley Faces](pens/Smiley Faces)
 
-- [Block Drop](pens/Block Drop)
-
 - [Fahrenheit to Celsius](pens/Fahrenheit to Celsius)
+
+- [Block Drop](pens/Block Drop)
 
 - [8ball](pens/8ball)
 
