@@ -29,11 +29,11 @@ A repository storing my codepens from [codepen.io](https://codepen.io) made duri
 
 - [Recursive Squares](pens/Recursive Squares)
 
+- [Fahrenheit to Celsius](pens/Fahrenheit to Celsius)
+
 - [radiate](pens/radiate)
 
 - [Smiley Faces](pens/Smiley Faces)
-
-- [Fahrenheit to Celsius](pens/Fahrenheit to Celsius)
 
 - [Block Drop](pens/Block Drop)
 
